@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+xmlns:f="http://java.sun.com/jsf/core" 
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:ui="http://java.sun.com/jsf/facelets" 
+xmlns:p="http://primefaces.org/ui"
+template="/template/template.xhtml">
+<ui:param name="page_name" value="login" />
+	<ui:define name="menu">
+		<h:form enctype="multipart/form-data">
+		
+		<h:panelGroup columns="2">
+		<table>
+		<tr>
+		<td>
+		<h:outputText value="Name"></h:outputText>
+		</td>
+		<td><h:inputText value="#{furnitureController.name}"></h:inputText></td>
+		</tr>
+		<tr>
+							<td><h:outputText for="prodprice" value="Price"></h:outputText></td>
+							<td><h:inputText id="prodprice"
+									value="#{furnitureController.price}">
+									<!-- <f:convertNumber type="currency" currencySymbol="DT" /> -->
+
+								</h:inputText></td>
+						</tr>
+						<tr>
+							<td><h:outputText value="Quantity"></h:outputText></td>
+							<td><h:inputText id="QA"
+									value="#{furnitureController.quantity}">
+								</h:inputText></td>
+
+						</tr>
+
+
+						<tr>
+							<td><h:outputText for="desc" value="Description"></h:outputText></td>
+							<td><h:inputTextarea id="desc"
+									value="#{furnitureController.description}">
+									<f:validateLength minimum="5" maximum="50" />
+								</h:inputTextarea></td>
+						</tr>
+					
+					
+					<h:commandButton id="btn"
+							value="Ajouter produit"
+							action="#{furnitureController.ajouterPicture()}" />
+
+					<h:message for="btn" />
+						
+	
+		</table></h:panelGroup>
+		
+		
+		
+		
+		
+		
+		</h:form>
+		
+		</ui:define></ui:composition>

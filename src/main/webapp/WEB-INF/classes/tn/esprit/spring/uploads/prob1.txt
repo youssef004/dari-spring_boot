@@ -1,0 +1,15 @@
+Variable de décision (variable inconnus du problème):
+
+x1= quantité de mais dans le repas en gramme
+x2= quantité de fèves dans le repas ena gramme
+Fonction objectif:
+
+min c= 1.5*x1+4.5*x2
+(c: etant le coût d'un repas) 
+
+Restrictions(Contraintes):
+
+x1+x2>=400g
+0.09*x1+0.60*x2>= 0.3*(x1+x2)
+0.02*x1+0.06*x2>=0.05*(x1+x2)
+x1,x2>=0

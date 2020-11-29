@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:b="http://bootsfaces.net/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+	<title>#{page_name}</title>
+	<h:outputStylesheet library="client" name="css/bootstrap.min.css"></h:outputStylesheet>
+		<h:outputStylesheet library="client" name="css/font-awesome.min.css"></h:outputStylesheet>
+		<h:outputStylesheet library="client" name="css/nice-select.css"></h:outputStylesheet>
+		<h:outputStylesheet library="client" name="css/owl.carousel.min.css"></h:outputStylesheet>
+		<h:outputStylesheet library="client" name="css/jquery-ui.min.css"></h:outputStylesheet>
+		<h:outputStylesheet library="client" name="css/slicknav.min.css"></h:outputStylesheet>
+		<h:outputStylesheet library="client" name="css/flaticon.css"></h:outputStylesheet>
+		<h:outputStylesheet library="client" name="css/style1.css"></h:outputStylesheet>
+	
+	
+	    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+        rel="stylesheet"/>
+
+   
+	
+	
+</h:head>
+<h:body>
+
+
+
+
+ <!-- Page Preloder -->
+   
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="img/logo.png" alt=""/>
+                        </a>
+                    </div>
+                    <ul class="main-menu">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./search.html">Search Results</a></li>
+                        <li><a href="./about.html">Categories</a></li>
+                        <li><a href="./single-property.html">Single Property</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+
+                        <li class="top-social">
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-behance"></i></a>
+                        </li>
+                    </ul>
+                    <div id="mobile-menu-wrap"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+      <!-- ooooooooooooooooooooo -->
+          
+    
+    <!-- Header Section End -->
+    <!-- Hero Section Begin -->
+    <section class="hero-section home-page set-bg" data-setbg="img/bg.jpg">
+        <div class="container hero-text text-white">
+            <h2>Find your next</h2>
+            <h1>dream home.</h1>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+    <!-- Filter Search Section Begin -->
+    <div class="filter-search">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-12">
+                    <form class="filter-form">
+                        <div class="location">
+                            <p>Location</p>
+                            <select class="filter-location">
+                                <option value="">London</option>
+                                <option value="">US</option>
+                                <option value="">UAE</option>
+                            </select>
+                        </div>
+                        <div class="search-type">
+                            <p>Property Type</p>
+                            <select class="filter-property">
+                                <option value="">House</option>
+                                <option value="">Resort</option>
+                                <option value="">Hotel</option>
+                            </select>
+                        </div>
+                        <div class="price-range">
+                            <p>Price</p>
+                            <div class="range-slider">
+                                <div id="slider-range">
+                                    <div tabindex="0"
+                                        class="ui-slider-handle ui-corner-all ui-state-default slider-left">50k</div>
+                                    <div tabindex="0"
+                                        class="ui-slider-handle ui-corner-all ui-state-default slider-right">300k</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bedrooms">
+                            <p>Bedrooms</p>
+                            <div class="room-filter-pagi">
+                                <div class="bf-item">
+                                    <input type="radio" name="room" id="room-1"/>
+                                    <label for="room-1">1</label>
+                                </div>
+                                <div class="bf-item">
+                                    <input type="radio" name="room" id="room-2"/>
+                                    <label for="room-2">2</label>
+                                </div>
+                                <div class="bf-item">
+                                    <input type="radio" name="room" id="room-3"/>
+                                    <label for="room-3">3</label>
+                                </div>
+                                <div class="bf-item">
+                                    <input type="radio" name="room" id="room-4"/>
+                                    <label for="room-4">4+</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bathrooms">
+                            <p>Bathrooms</p>
+                            <div class="room-filter-pagi">
+                                <div class="bf-item">
+                                    <input type="radio" name="bathroom" id="bathroom-1"/>
+                                    <label for="bathroom-1">1</label>
+                                </div>
+                                <div class="bf-item">
+                                    <input type="radio" name="bathroom" id="bathroom-2"/>
+                                    <label for="bathroom-2">2</label>
+                                </div>
+                                <div class="bf-item">
+                                    <input type="radio" name="bathroom" id="bathroom-3"/>
+                                    <label for="bathroom-3">3</label>
+                                </div>
+                                <div class="bf-item">
+                                    <input type="radio" name="bathroom" id="bathroom-4"/>
+                                    <label for="bathroom-4">4+</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-btn">
+                            <button type="submit"><i class="flaticon-search"></i>Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+  
+  
+   <br/>
+    <br/> <br/>
+    <br/> <br/>
+  <ui:insert name="xxx" />
+    <br/>
+    <br/> <br/>
+    <br/> <br/>
+    <br/> <br/>
+    <br/> <br/>
+    <br/> <br/>
+    <br/>
+    
+    
+    
+    
+  
+    <section class="instagram">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Don’t forget to follow us on Instagram @homes</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <!-- Rooms Pic Section Begin-->
+        <div class="room-pic">
+            <div class="container-fluid">
+                <div class="row sp-40">
+                    <img src="img/room-pic/1.jpg" alt=""/>
+                    <img src="img/room-pic/2.jpg" alt=""/>
+                    <img src="img/room-pic/3.jpg" alt=""/>
+                    <img src="img/room-pic/4.jpg" alt=""/>
+                    <img src="img/room-pic/5.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+        <!-- Rooms Pic Section End -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center sp-60">
+                    <img src="img/only-logo.png" alt=""/>
+                </div>
+            </div>
+            <div class="row p-37">
+                <div class="col-lg-4">
+                    <div class="about-footer">
+                        <h5>About Homes</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend tristique venenatis.
+                            Maecenas a rutrum tellus nam vel semper nibh.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-blog">
+                        <h5>Latest Blog Posts</h5>
+
+                        <div class="single-blog">
+                            <div class="lt-side">
+                                <img src="img/footer-blog-1.jpg" alt=""/>
+                            </div>
+                            <div class="rt-side">
+                                <h6>How to find the perfect area for<br/> your next house.</h6>
+                                <div class="blog-time">
+                                    <i class="flaticon-clock"></i>
+                                    <span>5 min</span>
+                                </div>
+                                <a href="#" class="read-more">
+                                    <i class="flaticon-right-arrow-1"></i>
+                                    <span>Read More</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="single-blog">
+                            <div class="lt-side">
+                                <img src="img/footer-blog-2.jpg" alt=""/>
+                            </div>
+                            <div class="rt-side">
+                                <h6>How to find the perfect area for<br/> your next house.</h6>
+                                <div class="blog-time">
+                                    <i class="flaticon-clock"></i>
+                                    <span>5 min</span>
+                                </div>
+                                <a href="#" class="read-more">
+                                    <i class="flaticon-right-arrow-1"></i>
+                                    <span>Read More</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-address">
+                        <h5>Get In Touch</h5>
+                        <ul>
+                            <li><i class="flaticon-placeholder"></i><span>132 Liberty Streetelit, Plano, Texas</span>
+                            </li>
+                            <li><i class="flaticon-envelope"></i><span>hello@home.com</span></li>
+                            <li><i class="flaticon-smartphone"></i><span>214-805-4428</span></li>
+                        </ul>
+                        <p>Monday – Friday: 9 am – 5 pm</p>
+                        <p>Saturday: 9 am – 1pm</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row p-20">
+                <div class="col-lg-12 text-center">
+                    <div class="copyright">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="../client/js/jquery-3.3.1.min.js"></script>
+    <script src="../client/js/bootstrap.min.js"></script>
+    <script src="../client/js/jquery.nice-select.min.js"></script>
+    <script src="../client/js/owl.carousel.min.js"></script>
+    <script src="../client/js/jquery-ui.min.js"></script>
+    <script src="../client/js/jquery.slicknav.js"></script>
+    <script src="../client/js/main.js"></script>
+
+
+
+
+
+
+
+
+
+
+</h:body>
+</html>
